@@ -108,6 +108,58 @@
   margin-left: 0.5rem;
 }
 
+.grid form {
+  margin: 16px 0;
+}
+
+.row {
+  display: grid;
+  grid-template-columns: 160px 1fr;
+}
+
+.row > label {
+  margin-right: 12px;
+  font-size: 2em;
+}
+
+.row > input,
+.row > textarea {
+  border: 1px solid gray;
+  padding: 8px 12px;
+  border-radius: 10px;
+}
+
+.row > textarea {
+  margin-right: 12px;
+}
+
+.rowButtons {
+  display: flex;
+  justify-content: center;
+}
+
+.rowButtons > button {
+  border: none;
+  background-image: linear-gradient(to right, #77A1D3 0%, #79CBCA  51%, #77A1D3  100%);
+  padding: 15px 45px;
+  font-size: 1.2em;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;            
+  box-shadow: 0 0 20px #eee;
+  border-radius: 10px;
+  display: flex;
+}
+
+.rowButtons > button:hover {
+  background-position: right center; /* change the direction of the change here */
+  color: #fff;
+  text-decoration: none;
+}
+
+
 @media (max-width: 600px) {
   .grid {
     width: 100%;
